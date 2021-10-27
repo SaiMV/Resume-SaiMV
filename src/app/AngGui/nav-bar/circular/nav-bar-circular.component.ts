@@ -29,14 +29,16 @@ export class NavBarCircularComponent implements OnInit {
     document.getElementById('pic').style.backgroundImage = "url('" + pp + "')";
     document.getElementById('pic').className = 'img-box';
     this.pos[0] = this.srart_pos;
-    console.log(this.item_count);
+    console.log('11111', this.item_count);
     for (i = 1; i < this.item_count; i++) {
       this.pos[i] = this.pos[i - 1] - 0.2;
       this.srart_pos = this.pos[i];
     }
     for (i = 0; i < this.item_count + 1; i++) {
-      //this.elem[i].style.left = 240 + 250 * Math.sin(this.pos[i]) + 'px';
-      //this.elem[i].style.top = 240 + 250 * Math.cos(this.pos[i]) + 'px';
+
+      let a = this.elem[i] as HTMLElement;
+            a.style.left = 240 + 250 * Math.sin(this.pos[i]) + 'px';
+      a.style.top = 240 + 250 * Math.cos(this.pos[i]) + 'px';
     }
   }
   animation(args, flag) {
@@ -59,12 +61,16 @@ export class NavBarCircularComponent implements OnInit {
       });
     }
     animate(
-      function (timePassed) {
+      (timePassed) => {
         var i;
+
         console.log(this.item_count);
+
         for (i = 0; i < this.item_count; i++) {
-          // e[i].style.left = 240 + $.radius * Math.sin(this.pos[i]) + 'px';
-          // e[i].style.top = 240 + $.radius * Math.cos(this.pos[i]) + 'px';
+          console.log()
+          let a = this.elem[i] as HTMLElement;
+            a.style.left = 240 + $.radius * Math.sin(this.pos[i]) + 'px';
+            a.style.top = 240 + $.radius * Math.cos(this.pos[i]) + 'px';
           if (flag) {
             this.pos[i] += this.s;
           } else {
@@ -73,7 +79,7 @@ export class NavBarCircularComponent implements OnInit {
         } /* callback function */
       },
       400,
-      function changeItems() {
+      () => {
         var list = document.getElementById('list');
         var ch = flag ? list.firstElementChild : list.lastElementChild;
         ch.remove();
