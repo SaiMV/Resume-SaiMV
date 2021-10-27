@@ -1,9 +1,9 @@
 /* Add application styles & imports to this file! */
 circular-nav {
-  background-color: #252954;
+  background-color: #0e0e23;
   display: block;
   float: left;
-  left:0px;
+  left: 0px;
   height: 100vh;
   width: 100vw;
 }

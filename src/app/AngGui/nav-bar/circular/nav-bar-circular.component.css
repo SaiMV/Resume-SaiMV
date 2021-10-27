@@ -7,10 +7,10 @@ a {
 .c-menu {
   position: relative;
   height: 440px;
-  width: 800px;
+  width: 100%;
   overflow: hidden;
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-left: 0px;
+  margin-top: calc((100vh - 440px) / 2);
 }
 
 .bottom,
