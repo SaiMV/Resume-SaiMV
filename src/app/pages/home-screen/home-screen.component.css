@@ -67,6 +67,8 @@
   font-weight: 100;
   font-style: normal;
   text-transform: uppercase;
+  text-align: center;
+  padding: 0px 40px;
 }
 
 .btn-default {
