@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavBarCircularComponent } from './AngGui/nav-bar/circular/nav-bar-circular.component';
 import { HomeScreenComponent } from './pages/home-screen/home-screen.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { EducationDetailsComponent } from './pages/education-details/education-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -14,6 +15,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
     NavBarCircularComponent,
     HomeScreenComponent,
     AboutMeComponent,
+    EducationDetailsComponent
   ],
   bootstrap: [AppComponent],
 })
