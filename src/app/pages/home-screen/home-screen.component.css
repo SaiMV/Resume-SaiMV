@@ -1,0 +1,94 @@
+/* Google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:100,300,700,700italic);
+
+/* GENERAL */
+
+.master-container {
+  font-size: 1rem;
+  font-family: Raleway, Arial, Verdana, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  color: #444;
+}
+
+.jumbotron a:hover,
+.jumbotron a:focus,
+.card-inner a:hover,
+.card-inner a:focus {
+  color: white;
+}
+
+/* links to social sites */
+
+/* navbar */
+
+/* jumbotron (hero component) */
+
+.jumbotron {
+  position: relative;
+  background: #143353
+    url(https://images.unsplash.com/photo-1458071103673-6a6e4c4a3413?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=70ea9a9ab650be910b9c2f83eb8f7217)
+    center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(20, 51, 83, 0.8);
+}
+
+.jumbotron .hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron .social-links {
+  align-self: center;
+}
+
+.jumbotron .hero-title {
+  color: rgba(255, 255, 255, 0.8);
+  align-self: center;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.btn-default {
+  background-color: #1caa8f;
+  border-color: #1caa8f;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default:visited {
+  background-color: #12705e;
+  border-color: #12705e;
+  color: white;
+}
+
+/* SECTIONS */
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
