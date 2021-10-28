@@ -17,7 +17,7 @@
   background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   padding: 40px 30px;
   border-radius: 6px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   flex-grow: 1;
   max-height: 430px;
@@ -80,104 +80,8 @@
 }
 
 .discount .subtitle-count {
-  font-size: 17px;
+  font-size: 14px;
   color: #17a98a;
   font-weight: 500;
 }
 
-.discount-chart {
-  margin-left: auto;
-}
-.circle {
-  width: 100px;
-  height: 100px;
-  border: 3px solid #5b5f78;
-  border-radius: 50%;
-  position: relative;
-}
-
-.pie {
-  position: relative;
-  width: 120px;
-  height: 120px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-.pie svg circle {
-  fill: transparent;
-  stroke: #4356d6;
-  stroke-width: 14;
-  stroke-dasharray: 275;
-  stroke-dashoffset: 235;
-  -webkit-animation: pieChart 3.8s linear forwards;
-  animation: pieChart 3.8s linear forwards;
-}
-.counter {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #3e50c5;
-  font-weight: 500;
-}
-.discount-profile {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-
-element.style {
-}
-.discount-img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  margin: 0 16px 0 12px;
-}
-img {
-  max-width: 100%;
-}
-img {
-  border-style: none;
-}
-.discount-name {
-  font-weight: 500;
-  font-size: 15px;
-}
-.discount-type {
-  font-size: 13px;
-  margin-top: 4px;
-}
-.discount-profile {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-.offer-button {
-  background: #4255d4 !important;
-  padding: 14px !important;
-  text-align: center;
-  justify-content: center;
-  margin-top: auto;
-  margin-right: 0;
-  color: #fff;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  color: #9b9ca7;
-  background: #1a1b3c;
-  border: none;
-  padding: 2px 12px;
-  border-radius: 4px;
-  margin-right: 20px;
-}

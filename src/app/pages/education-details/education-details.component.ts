@@ -24,32 +24,17 @@ export class EducationDetailsComponent {
     },
     {
       course: 'Higher Secondary',
-      stream: 'Computer Science',
-      percenctage: 67,
-      institution: 'HSE, Kerala State Board | THSS IHRD, Vazhakkad, Malappuram',
+      stream: 'Computer Science, HSE, Kerala State Board',
+      percenctage: 70,
+      institution: ' THSS IHRD, Vazhakkad, Malappuram',
       year: '2006-2008',
     },
     {
       course: 'SSLC',
-      stream: 'Computer Science',
-      percenctage: 67,
+      stream: 'Science, Kerala State Board',
+      percenctage: 70,
       institution: 'SPBS Ramanattukara, Calicut',
       year: '2006',
     },
   ];
-  counterArray = [];
-  counterFunction(percentage, index) {
-    const counter = document.querySelector('.counter');
-    // let count = 0;
-    // this.counterArray[] = setInterval(() => {
-    //  if(count == percentage) {
-    //   clearInterval(count);
-    //  }else {
-    //   count+=1;
-    // counter.textContent = count + "%";
-    //  }
-    // }, 42);
-    // counter.textContent = percentage + "%";
-    return true;
-  }
 }

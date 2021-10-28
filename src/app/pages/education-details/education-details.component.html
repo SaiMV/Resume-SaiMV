@@ -1,6 +1,6 @@
 <div class="main-container" *ngFor="let item of educationalData; let i = index">
   <div class="discount card" style="--delay: .4s">
-    <div class="title subtitle-count">{{ item.course }}</div>
+    <div class="title">{{ item.course }}</div>
     <div class="discount-wrapper">
       <div class="discount-info">
         <div class="subtitle">Stream:</div>
@@ -10,22 +10,11 @@
         <div class="subtitle">Year:</div>
         <div class="subtitle-count dist">{{ item.year }}</div>
       </div>
-      <!-- <div class="discount-chart" *ngIf="counterFunction(item.percenctage, i)">
-        <div class="circle">
-          <div class="pie">
-            <svg>
-              <circle cx="60" cy="60" r="50"></circle>
-            </svg>
-          </div>
-          <div class="counter" [ngClass]="'counter' + i">
-            {{ item.percenctage }}
-          </div>
-        </div>
-      </div> -->
+  
       <progress-bar
       type="circular"
-      title="Circular progress with title"
-      [progressPercentage]="40"
+      title=""
+      [progressPercentage]="item.percenctage"
     ></progress-bar>
     </div>
   </div>
