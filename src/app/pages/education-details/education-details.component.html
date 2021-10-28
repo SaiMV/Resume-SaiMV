@@ -10,7 +10,7 @@
         <div class="subtitle">Year:</div>
         <div class="subtitle-count dist">{{ item.year }}</div>
       </div>
-      <div class="discount-chart" *ngIf="counterFunction(item.percenctage, i)">
+      <!-- <div class="discount-chart" *ngIf="counterFunction(item.percenctage, i)">
         <div class="circle">
           <div class="pie">
             <svg>
@@ -21,7 +21,12 @@
             {{ item.percenctage }}
           </div>
         </div>
-      </div>
+      </div> -->
+      <progress-bar
+      type="circular"
+      title="Circular progress with title"
+      [progressPercentage]="40"
+    ></progress-bar>
     </div>
   </div>
 </div>
