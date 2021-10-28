@@ -1,6 +1,6 @@
-<div class="main-container">
+<div class="main-container" *ngFor="let item of educationalData">
   <div class="discount card" style="--delay: .4s">
-    <div class="title">Discount Offers</div>
+    <div class="title">{{ item.course }}</div>
     <div class="discount-wrapper">
       <div class="discount-info">
         <div class="subtitle">The Best Offer is:</div>

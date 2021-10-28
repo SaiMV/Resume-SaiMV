@@ -6,5 +6,35 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./education-details.component.css'],
 })
 export class EducationDetailsComponent {
-  name = 'Angular ' + VERSION.major;
+  educationalData = [
+    {
+      course: 'Master of Technology',
+      stream: 'Computer Application',
+      percenctage: 56,
+      institution: 'BITS, Pilani. Rajasthan',
+      year: '2012-2016',
+    },
+    {
+      course: 'Batchelor of Science',
+      stream: 'Computer Science',
+      percenctage: 67,
+      institution:
+        'College of Applied Science-IHRD, Calicut University, Kerala',
+      year: '2009-2012',
+    },
+    {
+      course: 'Higher Secondary',
+      stream: 'Computer Science',
+      percenctage: 67,
+      institution: 'HSE, Kerala State Board | THSS IHRD, Vazhakkad, Malappuram',
+      year: '2006-2008',
+    },
+    {
+      course: 'SSLC',
+      stream: 'Computer Science',
+      percenctage: 67,
+      institution: 'SPBS Ramanattukara, Calicut',
+      year: '2006',
+    },
+  ];
 }

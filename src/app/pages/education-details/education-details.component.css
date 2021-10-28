@@ -5,9 +5,12 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 25px;
+  padding: 25px !important;
   overflow: auto;
   padding-left: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #252954;
+  color: #9b9ca7;
 }
 .card {
   background: #1a2049;
@@ -157,8 +160,8 @@ img {
   margin-top: 40px;
 }
 .offer-button {
-  background: #4255d4;
-  padding: 14px;
+  background: #4255d4 !important;
+  padding: 14px !important;
   text-align: center;
   justify-content: center;
   margin-top: auto;
