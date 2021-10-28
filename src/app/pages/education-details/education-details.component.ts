@@ -37,4 +37,19 @@ export class EducationDetailsComponent {
       year: '2006',
     },
   ];
+  counterArray = [];
+  counterFunction(percentage, index) {
+    const counter = document.querySelector('.counter');
+    // let count = 0;
+    // this.counterArray[] = setInterval(() => {
+    //  if(count == percentage) {
+    //   clearInterval(count);
+    //  }else {
+    //   count+=1;
+    // counter.textContent = count + "%";
+    //  }
+    // }, 42);
+    // counter.textContent = percentage + "%";
+    return true;
+  }
 }

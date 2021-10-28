@@ -7,6 +7,7 @@ import { NavBarCircularComponent } from './AngGui/nav-bar/circular/nav-bar-circu
 import { HomeScreenComponent } from './pages/home-screen/home-screen.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { EducationDetailsComponent } from './pages/education-details/education-details.component';
+import { ProgressBarComponent } from './AngGui/progress-bar/progress-bar.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -15,7 +16,8 @@ import { EducationDetailsComponent } from './pages/education-details/education-d
     NavBarCircularComponent,
     HomeScreenComponent,
     AboutMeComponent,
-    EducationDetailsComponent
+    EducationDetailsComponent,
+    ProgressBarComponent,
   ],
   bootstrap: [AppComponent],
 })
