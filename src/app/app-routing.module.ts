@@ -8,6 +8,7 @@ import { PersonalDetailsComponent } from './pages/personal-details/personal-deta
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: PersonalDetailsComponent },
+  { path: 'home', component: HomeScreenComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'education-details', component: EducationDetailsComponent },
   { path: 'personal-details', component: PersonalDetailsComponent },

@@ -1,0 +1,225 @@
+<div class="scroll-container">
+  <div class="layout" *ngFor="let projectDetailsItem of projectDetails">
+    <section class="content">
+      <div class="container">
+        <section class="user-detail">
+          <!-- Profile Info -->
+          <div class="profile-info">
+            <img
+              style="width:140px;height:85px"
+              src="https://1000logos.net/wp-content/uploads/2021/05/Wipro-logo.png"
+              alt="Image 001"
+            />
+
+            <div class="desc">
+              <h3 class="name">{{ projectDetailsItem.projectName }}</h3>
+              <h5>{{ projectDetailsItem.projectDuration }}</h5>
+              <div class="reviews">
+                <span class="count">
+                  {{ projectDetailsItem.projectDurationInMonths }}
+                </span>
+                <span> Months </span>
+              </div>
+            </div>
+          </div>
+          <!-- Bio -->
+          <div class="bio-details profile-item">
+            <h4>Project Details</h4>
+            <p class="desc">
+              {{ projectDetailsItem.projectDescription }}
+            </p>
+          </div>
+          <!-- Roles and Responsibilities -->
+          <div class="basic-details profile-item">
+            <h4>
+              Roles and responsiblities as a -
+              {{ projectDetailsItem.rolesAndResponsibiltyAsA }}
+            </h4>
+            <ul class="info row">
+              <li
+                *ngFor="
+                  let platforms of projectDetailsItem.rolesAndResponsibilty
+                "
+              >
+                <span class="fa"></span>
+                <span> {{ platforms }} </span>
+              </li>
+            </ul>
+          </div>
+          <!-- Basic Details -->
+          <div class="basic-details profile-item">
+            <h4>Platforms used</h4>
+            <ul class="info platforms-used">
+              <li *ngFor="let platforms of projectDetailsItem.platformsUsed">
+                <span class="fa"></span>
+                <span> {{ platforms }} </span>
+              </li>
+            </ul>
+          </div>
+          <div class="basic-details profile-item">
+            <h4>Languages and tools used</h4>
+            <ul class="info languages-and-tools">
+              <li
+                *ngFor="
+                  let platforms of projectDetailsItem.languagesAndToolsUsed
+                "
+              >
+                <span class="fa"></span>
+                <span> {{ platforms }} </span>
+              </li>
+            </ul>
+          </div>
+          <!-- Tag details -->
+          <div class="tags-details profile-item">
+            <h4>Ides used</h4>
+            <ul class="info">
+              <li
+                [ngClass]="idesAndOtherTools?.priority"
+                *ngFor="
+                  let idesAndOtherTools of projectDetailsItem.idesAndOtherToolsUsed
+                "
+              >
+                {{ idesAndOtherTools?.tool }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider profile-item" style="display: none;"></div>
+
+          <!-- Associated -->
+          <div class="associated profile-item" style="display: none;">
+            <h4>Associated With Buildings (45)</h4>
+            <a href="#" class="more"> See All </a>
+
+            <ul class="buildings">
+              <li>
+                <img
+                  src="https://source.unsplash.com/65x65/?seattle"
+                  alt="Image 001"
+                />
+                <h3>Amazon House</h3>
+                <h4>Seattle</h4>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/65x65/?portland"
+                  alt="Image 001"
+                />
+                <h3>BIC Center</h3>
+                <h4>Portland</h4>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/65x65/?chicago"
+                  alt="Image 001"
+                />
+                <h3>8 Canada Square</h3>
+                <h4>Chicago</h4>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/65x65/?san francisco"
+                  alt="Image 001"
+                />
+                <h3>Tower 42</h3>
+                <h4>San Francisco</h4>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/65x65/?munich"
+                  alt="Image 001"
+                />
+                <h3>Croissant Business</h3>
+                <h4>Seattle</h4>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/65x65/?toronto"
+                  alt="Image 001"
+                />
+                <h3>Space House</h3>
+                <h4>Toronto</h4>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Divider -->
+          <div class="divider profile-item" style="display: none;"></div>
+
+          <!-- Memebers of Teams -->
+          <div class="members profile-item" style="display: none;">
+            <h4>Member of teams (5)</h4>
+            <a href="#" class="more"> See All </a>
+
+            <ul class="owners">
+              <li>
+                <img
+                  src="https://source.unsplash.com/160x160/?members"
+                  alt="Image 001"
+                />
+                <div class="desc">
+                  <h3>Historical</h3>
+                  <h4>35 Members</h4>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/160x160/?paris"
+                  alt="Image 001"
+                />
+                <div class="desc">
+                  <h3>Paris Design</h3>
+                  <h4>3 Members</h4>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="https://source.unsplash.com/160x160/?artist"
+                  alt="Image 001"
+                />
+
+                <div class="desc">
+                  <h3>Modernists</h3>
+                  <h4>102 Members</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider profile-item" style="display: none;"></div>
+
+          <!-- Rewviews -->
+          <div class="reviews profile-item" style="display: none;">
+            <h4>Reviews (9)</h4>
+            <a href="#" class="more"> See All </a>
+
+            <ul class="list">
+              <li>
+                <img
+                  src="https://source.unsplash.com/40x40/?artist"
+                  alt="profile"
+                />
+                <div class="text-content">
+                  <h4>Alice Townsend</h4>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+</div>

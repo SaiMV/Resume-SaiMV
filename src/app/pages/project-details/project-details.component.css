@@ -1,0 +1,314 @@
+.layout {
+  display: flex;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  -webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+}
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.content .user-list .list-wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.content .user-list .search-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-bottom: 0.5px solid #ddddde;
+  color: #8e9094;
+  font-size: 1em;
+  background: #fcfcfc;
+}
+.content .user-list .search-bar input[type='text'] {
+  border: none;
+  outline: none;
+  font-size: 0.75em;
+  background: none;
+}
+.content .user-list .list-section > label {
+  color: #8e9094;
+  display: block;
+  padding: 15px 30px;
+  border-bottom: 0.5px solid #ddddde;
+  font-size: 0.75em;
+}
+.content .user-list .list-section .list {
+  list-style: none;
+}
+.content .user-list .list-section .list li {
+  padding: 15px 30px;
+  border-bottom: 0.5px solid #ddddde;
+  border-right: 5px solid transparent;
+  display: flex;
+  align-items: center;
+}
+.content .user-list .list-section .list li:hover {
+  cursor: pointer;
+}
+.content .user-list .list-section .list li:hover,
+.content .user-list .list-section .list li.selected {
+  border-right-color: #1765d8;
+  background: #f7f7f7;
+}
+.content .user-list .list-section .list li > img {
+  border-radius: 50%;
+}
+.content .user-list .list-section .list li .text {
+  margin-left: 30px;
+}
+.content .user-list .list-section .list li .text h3 {
+  font-weight: 600;
+}
+.content .user-list .list-section .list li .text h5 {
+  color: #74777b;
+  margin-top: 10px;
+  font-size: 0.75em;
+}
+.content .container {
+  display: flex;
+  flex-grow: 1;
+}
+.content .container > section {
+  width: 100%;
+}
+.content .container .user-list {
+  border-right: 0.5px solid #ddddde;
+}
+.content .container .user-detail {
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.content .container .user-detail .profile-item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+.content .container .user-detail .profile-item:last-child {
+  margin-bottom: 0;
+}
+.content .container .user-detail .profile-item a.more {
+  position: absolute;
+  text-decoration: none;
+  color: red;
+  top: 0;
+  right: 0;
+  font-size: 0.625em;
+  color: #8e9094;
+}
+.content .container .user-detail .profile-item > h4 {
+  color: #74777b;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  margin: 5px 0px;
+  /* margin-bottom: 15px; */
+}
+.content .container .user-detail .profile-info {
+  display: flex;
+  align-items: center;
+}
+.content .container .user-detail .profile-info > img {
+  border-radius: 50%;
+}
+.content .container .user-detail .profile-info .desc {
+  margin-left: 15px;
+}
+.content .container .user-detail .profile-info .desc h5 {
+  color: #74777b;
+  font-size: 0.75em;
+  margin-top: 10px;
+}
+.content .container .user-detail .profile-info .desc .reviews {
+  margin-top: 30px;
+  font-size: 0.75em;
+  color: #74777b;
+}
+.content .container .user-detail .profile-info .desc .reviews .count {
+  padding: 7.5px 10px;
+  color: #fff;
+  border-radius: 2.5px;
+  background: #f6ab2e;
+  margin-right: 7.5px;
+}
+.content .container .user-detail .basic-details ul.info {
+  display: flex;
+  list-style: none;
+  margin: 5px 0px;
+  flex-wrap: wrap;
+}
+.content .container .user-detail .basic-details ul.info.row {
+  flex-direction: column;
+}
+.content .container .user-detail .basic-details ul.info.row li {
+  padding: 5px 0px;
+  list-style-type: disc;
+}
+.content .container .user-detail .basic-details ul.info.row li::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 5px;
+  content: '\260D';
+  color: orange;
+}
+ul.info.platforms-used li::before,
+ul.info.languages-and-tools li::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+  padding-right: 5px;
+  content: '\26AF';
+  color: orange;
+}
+.content .container .user-detail .basic-details ul.info li {
+  color: #424447;
+  font-size: 0.75em;
+  display: flex;
+  margin-right: 30px;
+}
+.content .container .user-detail .basic-details ul.info li i {
+  color: #74777b;
+  margin-right: 10px;
+}
+.content .container .user-detail .bio-details .desc {
+  color: #5b5d61;
+  font-size: 0.79em;
+  line-height: 1.8em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.content .container .user-detail .tags-details .info {
+  font-size: 0.75em;
+  list-style: none;
+}
+.content .container .user-detail .tags-details .info li {
+  display: inline-block;
+  background: #252529;
+  padding: 7.5px 10px;
+  border-radius: 1.6666666667px;
+  color: #fff;
+  margin-right: 7.5px;
+}
+.content .container .user-detail .tags-details .info li.high {
+  background: #34ab45;
+  margin: 5px;
+}
+.content .container .user-detail .tags-details .info li.medium {
+  background: #f6ab2e;
+  margin: 5px;
+}
+.content .container .user-detail .tags-details .info li.low {
+  background: #1765d8;
+  margin: 5px;
+}
+.content .container .user-detail .divider {
+  border-bottom: 0.5px solid #ddddde;
+  height: 1px;
+}
+
+.user-detail .associated .buildings {
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+}
+.user-detail .associated .buildings li {
+  display: inline-block;
+  font-size: 0.75em;
+  max-width: 65px;
+  margin: 0 15px;
+  margin-bottom: auto;
+}
+.user-detail .associated .buildings li:first-child {
+  margin-left: 0;
+}
+.user-detail .associated .buildings li img {
+  border-radius: 5px;
+}
+.user-detail .associated .buildings li h3 {
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+.user-detail .associated .buildings li h4 {
+  margin-top: 10px;
+  color: #8e9094;
+  line-height: 1.4em;
+}
+.user-detail .associated .buildings li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.user-detail .members .owners {
+  list-style: none;
+  display: flex;
+  margin-top: 15px;
+}
+.user-detail .members .owners li {
+  color: #fff;
+  margin: 0 30px;
+  position: relative;
+  width: 165px;
+  height: 165px;
+}
+.user-detail .members .owners li:first-child {
+  margin-left: 0;
+}
+.user-detail .members .owners li > img {
+  border-radius: 5px;
+  position: absolute;
+  z-index: 0;
+}
+.user-detail .members .owners li .desc {
+  position: absolute;
+  bottom: 0;
+  transition: bottom 0.5s;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.user-detail .members .owners li .desc h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.user-detail .members .owners li .desc h4 {
+  font-size: 0.625em;
+  color: #c2c4c6;
+}
+.user-detail .members .owners li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.user-detail .members .owners li:hover .desc {
+  bottom: 30px;
+}
+.user-detail .reviews ul.list {
+  list-style: none;
+  margin-top: 10px;
+}
+.user-detail .reviews ul.list li {
+  display: flex;
+  align-items: flex-start;
+}
+.user-detail .reviews ul.list li > img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.user-detail .reviews ul.list li .text-content h4 {
+  font-weight: 600;
+}
+.user-detail .reviews ul.list li .text-content .text {
+  margin-top: 10px;
+  font-size: 0.75em;
+  color: #8e9094;
+  line-height: 1.35em;
+}
