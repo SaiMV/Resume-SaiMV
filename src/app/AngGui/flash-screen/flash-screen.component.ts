@@ -20,14 +20,14 @@ export class FlashScreen {
     }, 1);
 
     this.intervalShine = setInterval(() => {
-      const childElements = this.lableContainer1.nativeElement.childNodes;
+      const childElements = this.lableContainer1?.nativeElement?.childNodes;
       if (childElements) {
         this.setShine();
       }
     }, 25);
 
     this.intervalTranslation1 = setInterval(() => {
-      const childElements = this.lableContainer2.nativeElement.childNodes;
+      const childElements = this.lableContainer2?.nativeElement?.childNodes;
       if (childElements) {
         this.translateText();
       }
