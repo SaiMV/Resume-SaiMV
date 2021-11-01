@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'circular-nav',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar-circular.component.css'],
 })
 export class NavBarCircularComponent implements OnInit {
+  @Output() closeNavBar = new EventEmitter<boolean>();
   srart_pos = 90.75;
   item_count = 13;
   s = (0.52 * Math.PI) / 180;
@@ -82,5 +83,10 @@ export class NavBarCircularComponent implements OnInit {
         this.allocationItems();
       }
     );
+  }
+  openMenu = true;
+  menuLinkClicked() {
+    this.openMenu = false;
+    this.closeNavBar.emit(false);
   }
 }

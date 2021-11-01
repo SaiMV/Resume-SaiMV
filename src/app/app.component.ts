@@ -25,9 +25,15 @@ export class AppComponent {
       this.opacityupto += 0.01;
       if (this.opacityupto > 1) {
         clearInterval(this.intervalTranslation1);
+        this.openNavBar = true;
         return;
       }
       elm.style.opacity = this.opacityupto;
     }
+  }
+
+  openNavBar = true;
+  openOrCloseNavBar(close: boolean) {
+    this.openNavBar = close;
   }
 }
