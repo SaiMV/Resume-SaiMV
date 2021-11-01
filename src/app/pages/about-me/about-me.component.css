@@ -80,3 +80,9 @@ img {
   align-items: center;
   font-size: 13px;
 }
+
+.destination-profile svg {
+  width: 18px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
