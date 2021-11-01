@@ -1,0 +1,82 @@
+.description-panel {
+  height: calc(100% - 20px);
+  border-radius: 6px;
+  margin: 10px;
+}
+.page-about-me p {
+  /* height: 90px; */
+  word-wrap: break-word;
+  color: #555555;
+  font-size: 1rem;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 0.9em;
+  opacity: 0.8;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+.page-about-me .title {
+  font-size: 20px;
+  padding: 0px 10px;
+  line-height: 2rem;
+  color: white;
+  background-color: rgba(0, 233, 233, 0.8);
+  border-radius: 6px 6px 0px 0px;
+}
+ul {
+  padding-right: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-grow: 4; */
+  justify-content: space-between;
+}
+ul li {
+  padding: 5px;
+  margin: 8px 0px;
+  background-color: #aaded5;
+  /* -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; */
+  list-style: none;
+}
+ul li .check {
+  position: relative;
+  margin: 0px 0px 0px 2px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 233, 233, 0.6);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 20px;
+  vertical-align: middle;
+}
+ul li.checked .check:after {
+  content: '\260D';
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 18px;
+  top: -3px;
+  left: 2px;
+  color: white;
+}
+ul li .text {
+  padding: 2px 6px;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.page.panel-content {
+  top: 14px;
+  width: calc(100% - 20px);
+  padding: 0px 10px;
+  background-color: #ffffff;
+  border-radius: 0px;
+  height: calc(100% - 50px);
+  box-shadow: none;
+}
