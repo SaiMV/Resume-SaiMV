@@ -3,4 +3,8 @@
 <!-- <about-me></about-me> -->
 <!-- <education-details></education-details> -->
 <about-me></about-me>
-<flash-screen *ngIf="flashScreen"></flash-screen> 
+<flash-screen *ngIf="flashScreen"></flash-screen>
+
+<div *ngIf="!flashScreen">
+  <router-outlet></router-outlet>
+</div>
