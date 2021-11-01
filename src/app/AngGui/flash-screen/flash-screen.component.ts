@@ -1,11 +1,11 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, ElementRef, VERSION, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'flash-screen',
   templateUrl: './flash-screen.component.html',
   styleUrls: ['./flash-screen.component.css'],
 })
-export class AppComponent {
+export class FlashScreen {
   @ViewChild('shineTwo') shineTwoRef: any;
   @ViewChild('lableContainer1') lableContainer1: any;
   @ViewChild('lableContainer2') lableContainer2: any;
