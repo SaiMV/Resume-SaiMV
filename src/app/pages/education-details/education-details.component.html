@@ -1,5 +1,5 @@
-<div class="main-container" *ngFor="let item of educationalData; let i = index">
-  <div class="discount card" style="--delay: .4s">
+<div class="main-container" >
+  <div class="discount card" style="--delay: .4s" *ngFor="let item of educationalData; let i = index">
     <div class="title">{{ item.course }}</div>
     <div class="discount-wrapper">
       <div class="discount-info">
