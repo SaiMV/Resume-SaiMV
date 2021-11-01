@@ -12,7 +12,9 @@
     max-width: 480px;
   }
 }
-
+.title{
+  color:White;
+}
 .card {
   background: #1a2049;
   background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
@@ -32,6 +34,7 @@
 .card .subtitle {
   font-size: 13px;
   line-height: 1.6em;
+  color:#bebec4;
 }
 .destination-card {
   background: #1a1d3a;
@@ -73,16 +76,19 @@ img {
 .sub-point {
   font-size: 13px;
   margin-top: 4px;
+  color: #bebec4;
 }
 .destination-length {
   margin-left: auto;
   display: flex;
   align-items: center;
   font-size: 13px;
+  color: #bebec4;
 }
 
 .destination-profile svg {
   width: 18px;
   flex-shrink: 0;
   margin-right: 8px;
+  color: #bebec4;
 }
