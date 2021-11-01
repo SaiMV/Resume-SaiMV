@@ -9,6 +9,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { EducationDetailsComponent } from './pages/education-details/education-details.component';
 import { ProgressBarComponent } from './AngGui/progress-bar/progress-bar.component';
 import { FlashScreen } from './AngGui/flash-screen/flash-screen.component';
+import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -20,6 +21,7 @@ import { FlashScreen } from './AngGui/flash-screen/flash-screen.component';
     EducationDetailsComponent,
     ProgressBarComponent,
     FlashScreen,
+    PersonalDetailsComponent,
   ],
   bootstrap: [AppComponent],
 })
