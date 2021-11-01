@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarCircularComponent } from './AngGui/nav-bar/circular/nav-bar-circular.component';
 import { HomeScreenComponent } from './pages/home-screen/home-screen.component';
@@ -11,7 +11,7 @@ import { ProgressBarComponent } from './AngGui/progress-bar/progress-bar.compone
 import { FlashScreen } from './AngGui/flash-screen/flash-screen.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     NavBarCircularComponent,
