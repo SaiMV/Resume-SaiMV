@@ -12,8 +12,8 @@
     max-width: 480px;
   }
 }
-.title{
-  color:White;
+.title {
+  color: White;
 }
 .card {
   background: #1a2049;
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-height: 430px;
+  /* max-height: 430px; */
   width: 100%;
 }
 .destination {
@@ -34,7 +34,8 @@
 .card .subtitle {
   font-size: 13px;
   line-height: 1.6em;
-  color:#bebec4;
+  color: #bebec4;
+  margin-bottom: 18px;
 }
 .destination-card {
   background: #1a1d3a;

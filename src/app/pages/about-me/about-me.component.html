@@ -1,7 +1,7 @@
 <div class="activity card" style="--delay: .2s">
   <div class="title">Hi there,</div>
-  <div class="subtitle">
-  I'm Sai, from India. I'm a designer, developer, life long learner, and ready for new opportunities and currently a permanent employee in Cognizant Technologies and Solutions.
+  <div class="subtitle" *ngFor="let aboutMeDetails of aboutMe">
+    {{ aboutMeDetails }}
   </div>
   <div class="destination">
     <div class="destination-card">
