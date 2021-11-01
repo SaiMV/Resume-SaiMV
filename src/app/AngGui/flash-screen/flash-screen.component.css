@@ -1,0 +1,316 @@
+html,
+body {
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.logo-container {
+  position: relative;
+  margin: 42.5vh auto 0 auto;
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  width: 275px;
+  cursor: pointer;
+}
+.sh-logo {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.logo-container,
+.sh-logo {
+  height: 77px;
+}
+.sh-back {
+  fill: url(#sh-grad);
+}
+.sh-right {
+  fill: #ffffff;
+  opacity: 0.6;
+}
+.sh-left {
+  fill: #ffffff;
+  opacity: 1;
+}
+.sh-left {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform-origin: center center;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -webkit-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -moz-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -o-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+}
+
+.sh-right {
+  transform: rotate(179.92105102539062deg) scale(1);
+  transform-origin: 50% 50%;
+  transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -webkit-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -moz-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -o-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+}
+.logo-container h1 {
+  position: absolute;
+  margin: 0 0;
+  padding: 0 0;
+  line-height: 1;
+  bottom: 10px;
+  left: 87px;
+  color: #00527b;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 34px;
+  letter-spacing: -1.9px;
+  z-index: 6;
+  transform: translateY(-200px);
+}
+.logo-container h2 span {
+  display: none;
+}
+.logo-container h2 {
+  position: absolute;
+  top: 2px;
+  left: 87px;
+  font-size: 1.345em;
+  font-weight: 400;
+  color: #00527b;
+  letter-spacing: -0.032em;
+  z-index: 6;
+}
+.logo-container .sh-logo,
+.logo-container h1 > span,
+.logo-container h2 > span {
+  opacity: 1;
+}
+
+.shine,
+.shine-2 {
+  background: rgba(255, 255, 255, 0);
+  background: -moz-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(255, 255, 255, 0.77) 62%,
+    rgba(255, 255, 255, 0.69) 64%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 94%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(5%, rgba(255, 255, 255, 1)),
+    color-stop(56%, rgba(255, 255, 255, 1)),
+    color-stop(62%, rgba(255, 255, 255, 0.77)),
+    color-stop(64%, rgba(255, 255, 255, 0.69)),
+    color-stop(70%, rgba(255, 255, 255, 1)),
+    color-stop(94%, rgba(255, 255, 255, 1)),
+    color-stop(100%, rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(255, 255, 255, 0.77) 62%,
+    rgba(255, 255, 255, 0.69) 64%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 94%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(255, 255, 255, 0.77) 62%,
+    rgba(255, 255, 255, 0.69) 64%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 94%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(255, 255, 255, 0.77) 62%,
+    rgba(255, 255, 255, 0.69) 64%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 94%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 56%,
+    rgba(255, 255, 255, 0.77) 62%,
+    rgba(255, 255, 255, 0.69) 64%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 94%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  position: absolute;
+  z-index: 5;
+  top: -20px;
+  opacity: 0.5;
+  left: -50px;
+  height: 117px;
+  width: 35px;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+.logo-container:hover .shine,
+.logo-container:hover .shine-2 {
+  animation-name: shining;
+  -webkit-animation-name: shining;
+  -moz-animation-name: shining;
+  -o-animation-name: shining;
+  animation-duration: 740ms;
+  -webkit-animation-duration: 740ms;
+  -moz-animation-duration: 740ms;
+  -o-animation-duration: 740ms;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  -o-animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.logo-container:hover .sh-left {
+  opacity: 0.6;
+  transform: scale(0.91);
+  -webkit-transform: scale(0.91);
+  -moz-transform: scale(0.91);
+  -o-transform: scale(0.91);
+}
+.logo-container:hover .sh-right {
+  opacity: 1;
+  transform: rotate(179.92105102539062deg) scale(0.91);
+  transform-origin: 50% 50%;
+
+  -webkit-transform: rotate(179.92105102539062deg) scale(0.91);
+  -moz-transform: rotate(179.92105102539062deg) scale(0.91);
+  -o-transform: rotate(179.92105102539062deg) scale(0.91);
+}
+.logo-container:hover .sh-right-2 {
+  opacity: 1;
+  transform: translate(-13px, -19px) rotate(90deg) scale(0.91) scale(0.91);
+  transform-origin: 47% 48%;
+  -webkit-transform: translate(-13px, -19px) rotate(90deg) scale(0.91)
+    scale(0.91);
+  -moz-transform: translate(-13px, -19px) rotate(90deg) scale(0.91) scale(0.91);
+  -o-transform: translate(-13px, -19px) rotate(90deg) scale(0.91) scale(0.91);
+}
+
+.sh-right-2 {
+  transform: translate(-10px, -10px) rotate(89.65254211425781deg) scale(1);
+  transform-origin: 47% 48%;
+  transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -webkit-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -moz-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -o-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+}
+
+.logo-container:hover .sh-right-3 {
+  opacity: 1;
+  transform: translate(-9px, 35px) rotate(-90.53070068359375deg) scale(0.91);
+  transform-origin: 50% 50%;
+  -webkit-transform: translate(-9px, 35px) rotate(-90.53070068359375deg)
+    scale(0.91);
+  -moz-transform: translate(-9px, 35px) rotate(-90.53070068359375deg)
+    scale(0.91);
+  -o-transform: translate(-9px, 35px) rotate(-90.53070068359375deg) scale(0.91);
+}
+.sh-right-3 {
+  opacity: 1;
+  transform: translate(-7px, 33px) rotate(-91.53070068359375deg) scale(1);
+  transform-origin: 50% 50%;
+
+  transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -webkit-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -moz-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+  -o-transition: opacity 180ms 50ms ease-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+}
+.sh-logo:hover {
+  transition: opacity 180ms 50ms ease-in-out,
+    transform 140ms 50ms cubic-bezier(0.175, 0.885, 0.415, 1.65);
+}
+.shine-2 {
+  z-index: 7;
+}
+@keyframes shining {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 82px;
+  }
+}
+@-webkit-keyframes shining {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 82px;
+  }
+}
+@-moz-keyframes shining {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 82px;
+  }
+}
+@-o-keyframes shining {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 82px;
+  }
+}
