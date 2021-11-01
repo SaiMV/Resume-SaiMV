@@ -9,13 +9,12 @@ export class AppComponent {
   @ViewChild('mainContainer') mainContainer: any;
   flashScreen = true;
   constructor() {
-    setTimeout(() => {
-      this.flashScreen = false;
-      this.intervalTranslation1 = setInterval(() => {
-        this.setElementOpacity();
-      }, 2);
-    }, 2300);
-
+    // setTimeout(() => {
+    //   this.flashScreen = false;
+    //   this.intervalTranslation1 = setInterval(() => {
+    //     this.setElementOpacity();
+    //   }, 2);
+    // }, 2300);
     //     window.open("http://localhost:4200/", "full", "dependent=yes, fullscreen=yes")
   }
   intervalTranslation1: any;
