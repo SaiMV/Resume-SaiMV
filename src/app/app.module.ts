@@ -10,6 +10,7 @@ import { EducationDetailsComponent } from './pages/education-details/education-d
 import { ProgressBarComponent } from './AngGui/progress-bar/progress-bar.component';
 import { FlashScreen } from './AngGui/flash-screen/flash-screen.component';
 import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
+import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -22,6 +23,7 @@ import { PersonalDetailsComponent } from './pages/personal-details/personal-deta
     ProgressBarComponent,
     FlashScreen,
     PersonalDetailsComponent,
+    ProjectDetailsComponent,
   ],
   bootstrap: [AppComponent],
 })
