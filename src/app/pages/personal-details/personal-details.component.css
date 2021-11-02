@@ -19,7 +19,7 @@
   padding: 0px 10px;
   line-height: 2rem;
   color: white;
-  background-color: rgba(0, 233, 233, 0.8);
+  background-color: rgb(28 32 67);
   border-radius: 6px 6px 0px 0px;
 }
 ul {
@@ -34,7 +34,7 @@ ul {
 ul li {
   padding: 5px;
   margin: 8px 0px;
-  background-color: #aaded5;
+  background-color: rgb(26 31 64);
   /* -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px; */
@@ -75,7 +75,7 @@ ul li .text {
   top: 14px;
   width: calc(100% - 20px);
   padding: 0px 10px;
-  background-color: #ffffff;
+  background-color: rgb(26 31 64);
   border-radius: 0px;
   height: calc(100% - 50px);
   box-shadow: none;
