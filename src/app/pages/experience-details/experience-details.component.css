@@ -69,8 +69,8 @@
 }
 .range-set-text {
   position: relative;
-  top: -3px;
-  left: 59px;
+  top: 0px;
+  left: 56px;
   width: 37px;
   font-size: 10px !important;
   min-width: 40px;
