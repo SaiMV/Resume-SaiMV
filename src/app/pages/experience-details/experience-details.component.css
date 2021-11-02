@@ -1,7 +1,10 @@
 .viewport {
   display: inline-flex;
   /* padding: 10px; */
-  max-width: 290px;
+  /* max-width: 290px; */
+  -webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+  box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+  margin: 5px 8px;
 }
 
 .todos {
@@ -15,7 +18,7 @@
   padding-bottom: 0.5em;
   margin: 10px;
   border-radius: 0.1em 0.1em 0.3em 0.3em;
-  background-color: #fff;
+  background-color: #1e2349;
   /* box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4); */
   z-index: 2;
 }
@@ -27,7 +30,7 @@
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 0.5em;
-  margin: auto;
+  /* margin: auto; */
   height: 37px;
   border-radius: 2px 2px 0 0;
   background-color: #04c6df;
@@ -35,10 +38,10 @@
   font-size: 0.9em;
   opacity: 1;
   font-style: italic;
-  color: #6b6b6b;
+  color: white;
   padding-top: 10px;
   padding-left: 10px;
-  background: rgba(0, 233, 233, 0.6);
+  background: rgb(26 32 76);
   clear: both;
 }
 
@@ -47,7 +50,6 @@
   display: flex;
   justify-content: center;
   min-width: 50px;
-  max-width: 50px;
   max-width: 80px;
   margin-bottom: 4px;
 }
