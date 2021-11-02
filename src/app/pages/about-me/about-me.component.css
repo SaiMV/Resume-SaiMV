@@ -72,9 +72,9 @@ img {
   margin-top: 30px;
 }
 .point {
-  font-size: 14px;
+  font-size: 12px;
   color: #bebec4;
-  font-weight: 500;
+  font-weight: 100;
 }
 .sub-point {
   font-size: 13px;
@@ -219,24 +219,22 @@ img {
   bottom: 50px;
 }
 .infogeek-profile .info {
-     /* background-color: #fff; */
-     display: inline-block;
-     position: relative;
-     left: -2em;
-     /* width: 100%; */
-     /* max-width: 30em; */
-     min-height: 20em;
-     padding: 0px 2em;
-     /* border: 0.5px solid #f0f0f0; */
-     /* border-radius: 0.3em; */
-     z-index: 1;
-     /* box-shadow: 1px 1px 2px 1px #bbb;*/
+  /* background-color: #fff; */
+  display: inline-block;
+  position: relative;
+  left: -2em;
+  /* width: 100%; */
+  /* max-width: 30em; */
+  /* min-height: 20em; */
+  padding: 0px 2em;
+  /* border: 0.5px solid #f0f0f0; */
+  /* border-radius: 0.3em; */
+  z-index: 1;
+  /* box-shadow: 1px 1px 2px 1px #bbb;*/
 }
 .infogeek-profile .info hr {
   border: none;
-  border-bottom: 1
-px
-solid #ddd;
+  border-bottom: 1 px solid #ddd;
   width: 100%;
   /* margin-left: -2em;*/
 }
@@ -245,22 +243,24 @@ solid #ddd;
 }
 .infogeek-profile .info header * {
   padding: 0.1em;
-  font-weight: 100;
+  font-weight: 500;
 }
 .infogeek-profile .info header h2 {
   display: block;
 }
 .infogeek-profile .info header h3 {
-  font-size: 80%;
-  font-weight: 500;
-  color: #444;
+  font-size: 14px;
+  font-weight: 100;
+  color: #c5c5c5;
 }
 .infogeek-profile .info header h3 .label:not(:first-child) {
   padding-left: 1em;
 }
 .infogeek-profile .info .info-container {
   display: table;
-  margin-top: 1em;
+  margin-top: 0px;
+  width: 100%;
+  min-width: 300px;
 }
 .infogeek-profile .info .info-container p {
   display: table-row;
@@ -268,14 +268,17 @@ solid #ddd;
 .infogeek-profile .info .info-container p .label,
 .infogeek-profile .info .info-container p .value {
   display: table-cell;
-  color: #777;
+  color: #bebec4;
   height: 2em;
+  width: 40%;
 }
 .infogeek-profile .info .label:after {
   content: ' : ';
 }
 .infogeek-profile .info .info-container p .value {
   text-transform: none;
-  color: #444;
-  padding-left: 5em;
+  font-size: 12px;
+  font-weight: 100;
+  color: #c5c5c5;
+  /* padding-left: 5em; */
 }
