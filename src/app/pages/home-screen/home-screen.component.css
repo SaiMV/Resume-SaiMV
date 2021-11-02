@@ -33,9 +33,7 @@
 
 .jumbotron {
   position: relative;
-  background: #143353
-    url(https://images.unsplash.com/photo-1458071103673-6a6e4c4a3413?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=70ea9a9ab650be910b9c2f83eb8f7217)
-    center center no-repeat;
+  background: #143353 url(../../../assets/my-dp-2.svg) center center no-repeat;
   background-size: cover;
   height: 100vh;
 }
