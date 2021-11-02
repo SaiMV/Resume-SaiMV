@@ -12,6 +12,7 @@ import { FlashScreen } from './AngGui/flash-screen/flash-screen.component';
 import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { CompanyExperienceDetailsComponent } from './pages/company-experience-details/company-experience-details.component';
+import { ExperienceDetailsComponent } from './pages/experience-details/experience-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -25,7 +26,8 @@ import { CompanyExperienceDetailsComponent } from './pages/company-experience-de
     FlashScreen,
     PersonalDetailsComponent,
     ProjectDetailsComponent,
-    CompanyExperienceDetailsComponent
+    CompanyExperienceDetailsComponent,
+    ExperienceDetailsComponent
   ],
   bootstrap: [AppComponent],
 })
