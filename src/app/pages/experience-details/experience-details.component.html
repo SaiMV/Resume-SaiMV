@@ -1,20 +1,26 @@
-<div class="viewport">
-<div  class="todos make-box" *ngFor="let skillList of skills">
-<div class="todos-heder">
-    {{skillList.mainSkill}}
-</div>
-<div class="todos" >
-  <div class="container" *ngFor="let skill of skillList.skillSet">
-    <span class="number">{{skill.skillName}} </span>
-    <span class="number"> {{skill.totalYears}} years </span>
-    <div class="progress-bar-circle">
-        <span>0</span>
-        <div class="overflow-bar" >
-          <div class="bar" [style.transform]="getTransform(skill.percentage)"></div>
+<div class="viewport" *ngFor="let skillList of skills">
+  <div class="todos make-box">
+    <div class="todos-heder">
+      {{ skillList.mainSkill }}
+    </div>
+    <div class="todos">
+      <div class="container" *ngFor="let skill of skillList.skillSet">
+        <span class="number">{{ skill.skillName }} </span>
+        <span class="number"> {{ skill.totalYears }} years </span>
+        <div class="progress-bar-circle">
+          <span class="range-set-text">10</span>
+          <div class="range-set-box">
+            <span class="range-text">0</span>
+            <div class="overflow-bar">
+              <div
+                class="bar"
+                [style.transform]="getTransform(skill.percentage)"
+              ></div>
+            </div>
+            <span class="range-text">5</span>
+          </div>
         </div>
-        <span>5</span>
       </div>
+    </div>
   </div>
-</div>
-
 </div>
