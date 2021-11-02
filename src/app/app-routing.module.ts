@@ -9,7 +9,7 @@ import { ProjectDetailsComponent } from './pages/project-details/project-details
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
-  { path: '', component: CompanyExperienceDetailsComponent },
+  { path: '', component: PersonalDetailsComponent },
   { path: 'home', component: HomeScreenComponent },
   { path: 'aboutMe', component: AboutMeComponent },
   { path: 'educationDetails', component: EducationDetailsComponent },
