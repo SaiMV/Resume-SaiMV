@@ -1,21 +1,26 @@
-<div class="main-container" >
-  <div class="discount card" style="--delay: .4s" *ngFor="let item of educationalData; let i = index">
-    <div class="title">{{ item.course }}</div>
-    <div class="discount-wrapper">
-      <div class="discount-info">
-        <div class="subtitle">Stream:</div>
-        <div class="subtitle-count">{{ item.stream }}</div>
-        <div class="subtitle">Institution:</div>
-        <div class="subtitle-count">{{ item.institution }}</div>
-        <div class="subtitle">Year:</div>
-        <div class="subtitle-count dist">{{ item.year }}</div>
+<div class="card-holder">
+  <div
+    class="main-container"
+    *ngFor="let item of educationalData; let i = index"
+  >
+    <div class="discount card" style="--delay: .4s">
+      <div class="title">{{ item.course }}</div>
+      <div class="discount-wrapper">
+        <div class="discount-info">
+          <div class="subtitle">Stream:</div>
+          <div class="subtitle-count">{{ item.stream }}</div>
+          <div class="subtitle">Institution:</div>
+          <div class="subtitle-count">{{ item.institution }}</div>
+          <div class="subtitle">Year:</div>
+          <div class="subtitle-count dist">{{ item.year }}</div>
+        </div>
+
+        <progress-bar
+          type="circular"
+          title=""
+          [progressPercentage]="item.percenctage"
+        ></progress-bar>
       </div>
-  
-      <progress-bar
-      type="circular"
-      title=""
-      [progressPercentage]="item.percenctage"
-    ></progress-bar>
     </div>
   </div>
 </div>
