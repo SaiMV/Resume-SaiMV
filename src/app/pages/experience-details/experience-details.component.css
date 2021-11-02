@@ -64,7 +64,17 @@
   min-width: 50px;
   overflow: hidden;
 }
-
+.range-text {
+  color: grey;
+}
+.range-set-text {
+  position: relative;
+  top: -23px;
+  left: 52px;
+  width: 37px;
+  min-width: 40px;
+  color: #00ca9d;
+}
 .bar {
   border: 5px solid #00ca9d;
   border-left-color: #ebedf8;
