@@ -25,6 +25,7 @@
   flex-grow: 1;
   /* max-height: 430px; */
   width: calc(100% - 60px);
+  border-bottom: 1px solid #0d1030;
 }
 .destination {
   display: flex;

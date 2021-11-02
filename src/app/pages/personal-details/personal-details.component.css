@@ -2,6 +2,7 @@
   height: calc(100% - 20px);
   border-radius: 6px;
   margin: 10px;
+  background-color: #161a3b;
 }
 .page-about-me p {
   /* height: 90px; */
@@ -75,7 +76,7 @@ ul li .text {
   top: 14px;
   width: calc(100% - 20px);
   padding: 0px 10px;
-  background-color: rgb(26 31 64);
+  background-color: #161a3b;
   border-radius: 0px;
   height: calc(100% - 50px);
   box-shadow: none;
