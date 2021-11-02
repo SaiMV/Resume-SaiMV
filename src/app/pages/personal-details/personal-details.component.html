@@ -1,13 +1,18 @@
 <div class="description-panel page-about-me">
   <div class="title">Personal</div>
   <div class="page panel-content">
-    <p>{{ personalAndEducationalDetails.address }}<br /></p>
-    <p>{{ personalAndEducationalDetails.phone }}<br /></p>
-    <p>{{ personalAndEducationalDetails.Email }}<br /></p>
-    <p>{{ personalAndEducationalDetails.DOB }}<br /></p>
-    <p>{{ personalAndEducationalDetails.Languages }}<br /></p>
+    <p>
+      <span>Address : </span>{{ personalAndEducationalDetails.address }}<br />
+    </p>
+    <p><span>Phone : </span>{{ personalAndEducationalDetails.phone }}<br /></p>
+    <p><span>Email : </span>{{ personalAndEducationalDetails.Email }}<br /></p>
+    <p><span>DOB : </span>{{ personalAndEducationalDetails.DOB }}<br /></p>
+    <p>
+      <span>Languages : </span>{{ personalAndEducationalDetails.Languages
+      }}<br />
+    </p>
 
-    <ul>
+    <!-- <ul>
       <li
         class="checked"
         *ngFor="let lang of personalAndEducationalDetails.Education"
@@ -15,6 +20,6 @@
         <div class="check"></div>
         <div class="text">{{ lang.course }}{{ lang.university }}</div>
       </li>
-    </ul>
+    </ul> -->
   </div>
 </div>
