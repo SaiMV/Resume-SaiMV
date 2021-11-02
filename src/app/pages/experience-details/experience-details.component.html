@@ -8,7 +8,7 @@
         <span class="number">{{ skill.skillName }} </span>
         <span class="number"> {{ skill.totalYears }} years </span>
         <div class="progress-bar-circle">
-          <span class="range-set-text">{{skill.percentage}} %</span>
+          <span class="range-set-text">{{skill.percentage/10}}</span>
           <div class="range-set-box">
             <span class="range-text">0</span>
             <div class="overflow-bar">
@@ -17,7 +17,7 @@
                 [style.transform]="getTransform(skill.percentage)"
               ></div>
             </div>
-            <span class="range-text">5</span>
+            <span class="range-text">0</span>
           </div>
         </div>
       </div>
