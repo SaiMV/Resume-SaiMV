@@ -21,12 +21,13 @@ export class ExperienceDetailsComponent {
       ],
     },
     {
-      mainSkill: 'Xamarin, Android, Spring Boot',
+      mainSkill: 'Other - Xamarin, Android, Spring Boot',
       skillSet: [
         { skillName: '.net C#', totalYears: 3, percentage: 80 },
         { skillName: 'SQL', totalYears: 3, percentage: 80 },
         { skillName: 'Java', totalYears: 9, percentage: 70 },
         { skillName: 'SQLLite', totalYears: 3, percentage: 50 },
+        { skillName: 'JDBC', totalYears: 3, percentage: 50 },
       ],
     },
   ];
