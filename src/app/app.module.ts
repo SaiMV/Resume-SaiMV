@@ -11,6 +11,7 @@ import { ProgressBarComponent } from './AngGui/progress-bar/progress-bar.compone
 import { FlashScreen } from './AngGui/flash-screen/flash-screen.component';
 import { PersonalDetailsComponent } from './pages/personal-details/personal-details.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
+import { CompanyExperienceDetailsComponent } from './pages/company-experience-details/company-experience-details.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -24,6 +25,7 @@ import { ProjectDetailsComponent } from './pages/project-details/project-details
     FlashScreen,
     PersonalDetailsComponent,
     ProjectDetailsComponent,
+    CompanyExperienceDetailsComponent
   ],
   bootstrap: [AppComponent],
 })
