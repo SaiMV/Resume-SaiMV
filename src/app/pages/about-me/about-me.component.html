@@ -2,12 +2,15 @@
   <img src="../../../assets/my-dp-1.svg" alt="profile pic" />
 </div> -->
 <div class="circular-image-container">
-<div class="dp-body">
-  <div class="circle"></div>
-  <div class="pp"></div>
+  <div class="dp-body">
+    <div class="circle"></div>
+    <div class="pp"></div>
+  </div>
 </div>
-</div>
-<div class="activity card" style="--delay: .2s">
+<div
+  class="activity card"
+  style="--delay: .2s;    box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);"
+>
   <div class="title">Hi there,</div>
   <div class="subtitle" *ngFor="let aboutMeDetails of aboutMe">
     {{ aboutMeDetails }}

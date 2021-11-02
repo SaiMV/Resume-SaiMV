@@ -1,6 +1,6 @@
 .layout {
   display: flex;
-  background: #fff;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -9,6 +9,10 @@
   height: calc(100% - 20px);
   -webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
   box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+  font-family: 'Raleway', Arial, sans-serif;
+}
+.layout h3, .profile-item h4{
+  color:white;
 }
 .content {
   display: flex;
@@ -110,7 +114,7 @@
   color: #8e9094;
 }
 .content .container .user-detail .profile-item > h4 {
-  color: #74777b;
+  color: #fff;
   text-transform: uppercase;
   font-size: 0.75em;
   margin: 5px 0px;
@@ -171,19 +175,20 @@ ul.info.languages-and-tools li::before {
   padding-right: 5px;
   content: '\26AF';
   color: orange;
+  margin-top: -5px;
 }
 .content .container .user-detail .basic-details ul.info li {
-  color: #424447;
+  color: #bbbdbf;
   font-size: 0.75em;
   display: flex;
   margin-right: 30px;
 }
 .content .container .user-detail .basic-details ul.info li i {
-  color: #74777b;
+  color: #bebec4;
   margin-right: 10px;
 }
 .content .container .user-detail .bio-details .desc {
-  color: #5b5d61;
+  color: #bebec4;
   font-size: 0.79em;
   line-height: 1.8em;
   margin-top: 0px;
