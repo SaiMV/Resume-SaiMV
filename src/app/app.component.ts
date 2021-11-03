@@ -36,4 +36,13 @@ export class AppComponent {
   openOrCloseNavBar(close: boolean) {
     this.openNavBar = close;
   }
+
+  openSlider: any;
+  getClass() {
+    if (this.openSlider === undefined) {
+      return 'set-left';
+    } else {
+      return this.openSlider ? 'move-to-right' : 'move-to-left';
+    }
+  }
 }
