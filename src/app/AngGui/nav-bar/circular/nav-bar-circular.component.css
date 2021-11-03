@@ -84,7 +84,7 @@ a {
   font-size: 12px;
 }
 .item:nth-child(7) {
-  font-size: 18px;
+  font-size: 15px;
   margin-top: -4px;
   transition: font-size 0.5s;
 }
