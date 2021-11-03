@@ -7,11 +7,13 @@ a {
 .c-menu {
   position: relative;
   height: 440px;
-  width: 100%;
+  width: 300px;
   overflow: hidden;
   margin-left: 0px;
   margin-top: calc((100vh - 440px) / 2);
-  box-shadow: 0px 0px 8px #374894, inset 0 0 8px #0004ff;
+  /* box-shadow: 0px 0px 8px #374894, inset 0 0 8px #0004ff; */
+  border-bottom-right-radius: 210px;
+  border-top-right-radius: 210px;
 }
 
 .bottom,
@@ -68,20 +70,21 @@ a {
   border: 2px solid #a2c0d9;
   border-radius: 50%;
   margin: 70px;
-  box-shadow: -20px -18px 9px 0px, inset -9px -3px 9px 0px #0004ff
+  box-shadow: -20px -18px 9px 0px, inset -9px -3px 9px 0px #0004ff;
 }
 
 .item {
   position: absolute;
   width: 600px;
   padding-left: 25px;
-  font-size: 18px;
+  /* font-size: 18px; */
   transition: font-size 1s;
   text-align: left;
   cursor: pointer;
+  font-size: 12px;
 }
 .item:nth-child(7) {
-  font-size: 28px;
+  font-size: 18px;
   margin-top: -4px;
   transition: font-size 0.5s;
 }
