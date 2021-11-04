@@ -12,7 +12,6 @@ body {
   user-select: none;
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  /* transform: matrix(1, 0, 0, 1, 0, 0); */
 }
 ::-webkit-scrollbar {
   background-color: rgba(16, 16, 16, 0.05);
@@ -47,10 +46,6 @@ home-screen {
   position: relative;
   color: #444;
 }
-
-.main-page-container {
-  /* opacity:0; */
-}
 .make-box {
   border-radius: 6px;
   box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
@@ -71,7 +66,6 @@ home-screen {
   right: 0;
   bottom: 0;
   top: 0;
-  /* display: inline-flex; */
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   margin: auto auto;
@@ -96,11 +90,9 @@ home-screen {
   max-width: calc(100% - 20px);
   margin-top: 5px;
   max-height: calc(100% - 10px);
-  /* border-right: 6px solid #0e2166; */
   box-shadow: 3px 1px 4px 3px rgb(16 0 150);
   background-color: #0c0213;
   min-height: 513px;
-  /* border-left: 6px solid #62fff8; */
 }
 .page.panel-content {
   -moz-border-radius: 0px 0px 6px 6px !important;

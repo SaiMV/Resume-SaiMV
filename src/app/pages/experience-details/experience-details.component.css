@@ -50,11 +50,12 @@
 
 .progress-bar-circle {
   align-items: flex-end;
-  display: flex;
-  justify-content: center;
-  min-width: 50px;
-  max-width: 80px;
-  margin-bottom: 4px;
+    display: flex;
+    justify-content: end;
+    min-width: 50px;
+    margin-right: 10px;
+    max-width: 65px;
+    margin-bottom: 4px;
 }
 
 .overflow-bar {
@@ -110,13 +111,13 @@
   color: white;
 }
 .number:nth-child(2){
-  max-width: 50px;
+  max-width: 50px;justify-content: left;
 }
 .container {
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   height: 35px;
   padding: 0px 10px;
   width: 100%;
