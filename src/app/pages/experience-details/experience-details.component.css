@@ -1,5 +1,7 @@
 .viewport {
   display: inline-flex;
+  /* padding: 10px; */
+  /* max-width: 290px; */
   -webkit-box-shadow: 0px -1px 9px 1px rgb(65 0 150);
   box-shadow: 0px -1px 9px 1px rgb(65 0 150);
   margin: 5px 8px;
@@ -12,11 +14,13 @@
   max-width: 400px;
   display: flex;
   flex-wrap: wrap;
+  /* padding: 1em; */
   position: relative;
   padding-bottom: 0.5em;
   margin: 1px;
   border-radius: 5px;
   background-color: #1e2349;
+  /* box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4); */
   z-index: 2;
 }
 .todos-heder {
@@ -98,7 +102,7 @@
 .number {
   font-size: 13px;
   flex-wrap: wrap;
-  width:80px;
+  width:95px;
   align-items: flex-end;
   display: flex;
   justify-content: left;
@@ -106,7 +110,7 @@
   color: white;
 }
 .number:nth-child(2){
-  max-width: 80px;
+  max-width: 50px;
 }
 .container {
 
