@@ -1,25 +1,22 @@
 .viewport {
   display: inline-flex;
-  /* padding: 10px; */
-  /* max-width: 290px; */
-  -webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
-  box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+  -webkit-box-shadow: 0px -1px 9px 1px rgb(65 0 150);
+  box-shadow: 0px -1px 9px 1px rgb(65 0 150);
   margin: 5px 8px;
+  border-radius: 5px;
 }
 
 .todos {
-  width: 95%;
+  width: auto;
   box-sizing: border-box;
   max-width: 400px;
   display: flex;
   flex-wrap: wrap;
-  /* padding: 1em; */
   position: relative;
   padding-bottom: 0.5em;
-  margin: 10px;
-  border-radius: 0.1em 0.1em 0.3em 0.3em;
+  margin: 1px;
+  border-radius: 5px;
   background-color: #1e2349;
-  /* box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4); */
   z-index: 2;
 }
 .todos-heder {
@@ -43,6 +40,8 @@
   padding-left: 10px;
   background: rgb(26 32 76);
   clear: both;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .progress-bar-circle {
@@ -99,30 +98,23 @@
 .number {
   font-size: 13px;
   flex-wrap: wrap;
-  width: 110px;
+  width:80px;
   align-items: flex-end;
   display: flex;
   justify-content: left;
   margin-bottom: 8px;
   color: white;
-  /* padding-left: 5px; */
 }
-
+.number:nth-child(2){
+  max-width: 80px;
+}
 .container {
-  /* display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-    height: 200px;
-    float: right;
-    right: 0px; */
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 35px;
-  display: flex;
-  /* flex-wrap: wrap; */
+  padding: 0px 10px;
   width: 100%;
   align-content: space-between;
   border-bottom: 1px solid #efefef;

@@ -7,8 +7,8 @@
   border-radius: 5px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  -webkit-box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
-  box-shadow: 1px 1px 10px rgb(0 0 0 / 80%);
+  -webkit-box-shadow: 0px -1px 9px 1px rgb(65 0 150);
+  box-shadow: 0px -1px 9px 1px rgb(65 0 150);
   font-family: 'Raleway', Arial, sans-serif;
 }
 .layout h3, .profile-item h4{

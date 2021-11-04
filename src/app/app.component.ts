@@ -35,6 +35,7 @@ export class AppComponent {
   openNavBar = true;
   openOrCloseNavBar(close: boolean) {
     this.openNavBar = close;
+    this.openSlider = close;
   }
 
   openSlider: any;
