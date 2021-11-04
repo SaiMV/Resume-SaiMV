@@ -46,7 +46,7 @@
   max-width: 320px;
     min-width: 318px;
     min-height: 354px;
-  box-shadow: 0px 1px 6px 1px rgb(87 65 157);
+  box-shadow: 0px -1px 9px 1px rgb(65 0 150);
 }
 
 .discount .title {
