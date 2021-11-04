@@ -33,7 +33,7 @@
   align-items: center;
   margin-top: auto;
   border-radius: 10px;
-  box-shadow: 0px -1px 20px 6px rgb(4 0 255 / 80%);
+  box-shadow: 0px -1px 20px 6px rgb(4 0 255 / 24%);
 }
 .card .subtitle {
   font-size: 13px;

@@ -4,9 +4,9 @@
   margin: 10px;
   background-color: #161a3b;
 }
-.page-about-me span{
+.page-about-me span {
   font-weight: bold;
-  color:white;
+  color: white;
 }
 .page-about-me p {
   /* height: 90px; */
@@ -20,7 +20,7 @@
 }
 .page-about-me .title {
   font-size: 20px;
-  padding:5px 22px;
+  padding: 5px 22px;
   line-height: 2rem;
   color: white;
   background-color: rgb(28 32 67);
