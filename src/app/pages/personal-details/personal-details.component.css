@@ -3,6 +3,7 @@
   border-radius: 6px;
   margin: 10px;
   background-color: #161a3b;
+  box-shadow: 0px -1px 9px 1px rgb(65 0 150);
 }
 .page-about-me span {
   font-weight: bold;
