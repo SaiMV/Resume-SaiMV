@@ -95,7 +95,8 @@ home-screen {
   max-width: calc(100% - 20px);
   margin-top: 5px;
   max-height: calc(100% - 10px);
-  border-right: 6px solid #03325e;
+  border-right: 6px solid #0e2166;
+  box-shadow: -5px 1px 0px 20px rgb(16 0 150);
   background-color: #0c0213;
   min-height: 513px;
   /* border-left: 6px solid #62fff8; */
