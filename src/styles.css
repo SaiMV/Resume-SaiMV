@@ -20,7 +20,7 @@ body {
   height: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(50 195 202);
+  background-color: rgb(0 58 165);
 }
 circular-nav {
   background-color: rgb(14 14 35 / 95%);
@@ -31,6 +31,7 @@ circular-nav {
   width: 300px;
   border-bottom-right-radius: 210px;
   border-top-right-radius: 210px;
+  box-shadow: inset -11px 0px 14px 0px rgb(17 50 211 / 80%);
 }
 home-screen {
   font-size: 1rem;
@@ -95,8 +96,8 @@ home-screen {
   max-width: calc(100% - 20px);
   margin-top: 5px;
   max-height: calc(100% - 10px);
-  border-right: 6px solid #0e2166;
-  box-shadow: -5px 1px 0px 20px rgb(16 0 150);
+  /* border-right: 6px solid #0e2166; */
+  box-shadow: 3px 1px 4px 3px rgb(16 0 150);
   background-color: #0c0213;
   min-height: 513px;
   /* border-left: 6px solid #62fff8; */
