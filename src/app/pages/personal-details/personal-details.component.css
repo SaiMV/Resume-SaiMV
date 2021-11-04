@@ -26,6 +26,7 @@
   background-color: rgb(28 32 67);
   border-radius: 6px 6px 0px 0px;
   position: relative;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
 }
 ul {
   padding-right: 30px;
@@ -75,7 +76,7 @@ ul li .text {
 .page.panel-content {
   width: calc(100% - 60px);
   padding: 10px 28px;
-  background-color: #161a3b;
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
   border-radius: 0px;
   height: auto;
   box-shadow: none;
