@@ -18,7 +18,7 @@ export class PersonalDetailsComponent implements OnInit {
     ],
     phone: ['+918086046407', '+918593939224'],
     Email: 'saimv09@gmail.com',
-    DOB: '13-10-1990',
+    DOB: '1-09-1991',
     Languages: [' English', 'Malayalam (Mother Tounge)', 'Tamil', 'Hindi'],
     Education: [
       {
